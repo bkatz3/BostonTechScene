@@ -4,7 +4,6 @@ import StatCard from "@/components/StatCard";
 import QuickNavCard from "@/components/QuickNavCard";
 import FadeIn from "@/components/FadeIn";
 import { communities } from "@/data/communities";
-import { annualEvents } from "@/data/events";
 import { programs } from "@/data/programs";
 import { vcFirms } from "@/data/vcs";
 import { workspaces } from "@/data/workspaces";
@@ -12,15 +11,9 @@ import { workspaces } from "@/data/workspaces";
 const quickNavItems = [
   {
     href: "/communities",
-    title: "Communities",
-    description: "Founder networks, professional groups, and the connectors who make introductions happen.",
+    title: "Communities & Events",
+    description: "Founder networks, professional groups, and the best places to find events worth your time.",
     icon: "🤝",
-  },
-  {
-    href: "/events",
-    title: "Events",
-    description: "Where to find meetups, conferences, and annual gatherings worth your time.",
-    icon: "📅",
   },
   {
     href: "/programs",
@@ -185,7 +178,7 @@ export default function Home() {
             <div className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">Explore the guide</h2>
               <p className="text-text-secondary max-w-xl">
-                Five sections covering everything you need to plug into the Boston ecosystem.
+                Four sections covering everything you need to plug into the Boston ecosystem.
               </p>
             </div>
           </FadeIn>
@@ -193,7 +186,6 @@ export default function Home() {
             {quickNavItems.map((item, i) => {
               const counts: Record<string, number> = {
                 "/communities": communities.length,
-                "/events": annualEvents.length,
                 "/programs": programs.length,
                 "/vcs": vcFirms.length,
                 "/workspaces": workspaces.length,

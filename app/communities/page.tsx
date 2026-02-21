@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import FadeIn from "@/components/FadeIn";
-import { communities, superconnectors } from "@/data/communities";
+import { communities } from "@/data/communities";
+import { eventAggregators } from "@/data/events";
 
 export const metadata: Metadata = {
-  title: "Communities",
+  title: "Communities & Events",
   description:
-    "The best founder communities, professional networks, and superconnectors in the Boston startup ecosystem.",
+    "The best founder communities, professional networks, and places to find events in the Boston startup ecosystem.",
 };
 
 const badgeColors: Record<string, string> = {
@@ -42,17 +43,46 @@ export default function CommunitiesPage() {
             {communities.length} communities listed
           </div>
           <h1 className="text-3xl sm:text-5xl font-bold text-text-primary mb-4 tracking-tight">
-            Communities
+            Communities & Events
           </h1>
           <p className="text-text-secondary text-lg max-w-2xl leading-relaxed">
-            Boston&apos;s startup ecosystem runs on relationships. These are the communities, networks,
-            and organizations where those relationships get built.
+            Boston&apos;s startup ecosystem runs on relationships. These are the communities where
+            they get built, and the best places to find events worth your time.
           </p>
         </div>
       </FadeIn>
 
-      {/* Communities grid */}
+      {/* Event aggregators */}
       <section className="mb-20">
+        <FadeIn>
+          <SectionHeader
+            title="Event Aggregators"
+            subtitle="The best places to discover Boston startup meetups, networking nights, and community gatherings."
+          />
+        </FadeIn>
+        <div className="overflow-hidden rounded-xl border border-[#2a2a2a]">
+          {eventAggregators.map((agg, i) => (
+            <FadeIn key={agg.name} delay={i * 60}>
+              <div className={`flex flex-col sm:flex-row sm:items-center gap-4 p-5 ${i < eventAggregators.length - 1 ? "border-b border-[#2a2a2a]" : ""} bg-surface hover:bg-[#202020] transition-colors`}>
+                <div className="sm:w-40 shrink-0">
+                  <a
+                    href={agg.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-text-primary font-semibold text-sm hover:text-accent transition-colors"
+                  >
+                    {agg.name} →
+                  </a>
+                </div>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">{agg.description}</p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </section>
+
+      {/* Communities grid */}
+      <section>
         <FadeIn>
           <SectionHeader
             title="Founder Communities"
@@ -69,44 +99,6 @@ export default function CommunitiesPage() {
                 badge={community.badge}
                 badgeColor={community.badge ? badgeColors[community.badge] : undefined}
               />
-            </FadeIn>
-          ))}
-        </div>
-      </section>
-
-      {/* Superconnectors */}
-      <section>
-        <FadeIn>
-          <SectionHeader
-            title="Superconnectors"
-            subtitle="Boston founders and investors known for making warm introductions and building the ecosystem."
-          />
-        </FadeIn>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {superconnectors.map((person, i) => (
-            <FadeIn key={person.name} delay={i * 40}>
-              <div className="bg-surface border border-[#2a2a2a] rounded-xl p-5 card-hover">
-                <div className="flex items-start gap-3">
-                  <div className="w-9 h-9 rounded-full bg-accent/15 flex items-center justify-center text-accent text-sm font-bold shrink-0">
-                    {person.name.charAt(0)}
-                  </div>
-                  <div>
-                    {person.url ? (
-                      <a
-                        href={person.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-text-primary font-semibold text-sm hover:text-accent transition-colors"
-                      >
-                        {person.name}
-                      </a>
-                    ) : (
-                      <p className="text-text-primary font-semibold text-sm">{person.name}</p>
-                    )}
-                    <p className="text-text-secondary text-xs mt-0.5">{person.role}</p>
-                  </div>
-                </div>
-              </div>
             </FadeIn>
           ))}
         </div>
