@@ -52,7 +52,7 @@ export default function ProgramsPage() {
               </div>
               <div>
                 <p className="text-text-primary font-semibold mb-1">Match your stage</p>
-                <p>University programs (MIT Sandbox, IDEA) are best pre-product. Techstars/MassChallenge want traction.</p>
+                <p>MassChallenge and Techstars want traction. Incubators like Greentown and LabCentral are better pre-revenue.</p>
               </div>
               <div>
                 <p className="text-text-primary font-semibold mb-1">Network over curriculum</p>
