@@ -102,7 +102,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center -mt-16">
             <FadeIn>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium mb-8">
-                🦞 The Founder&apos;s Guide to Boston
+                Curated by Local Founders
               </div>
             </FadeIn>
             <FadeIn delay={100}>
