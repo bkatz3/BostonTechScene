@@ -64,7 +64,12 @@ export default function DataTable<T>({
     if (!activeCol?.sortValue) return 0;
     const aVal = activeCol.sortValue(a);
     const bVal = activeCol.sortValue(b);
-    return sortDir === "asc" ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+    if (typeof aVal === "number" && typeof bVal === "number") {
+      return sortDir === "asc" ? aVal - bVal : bVal - aVal;
+    }
+    return sortDir === "asc"
+      ? String(aVal).localeCompare(String(bVal))
+      : String(bVal).localeCompare(String(aVal));
   });
 
   return (

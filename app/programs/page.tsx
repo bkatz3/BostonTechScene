@@ -23,7 +23,7 @@ export default function ProgramsPage() {
             Programs
           </h1>
           <p className="text-text-secondary text-lg max-w-2xl leading-relaxed">
-            From equity-free accelerators to world-class university labs — these are the programs
+            From equity-free accelerators to world-class university labs. These are the programs
             that give Boston founders an unfair advantage.
           </p>
         </div>

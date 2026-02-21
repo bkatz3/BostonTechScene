@@ -75,7 +75,7 @@ export const annualEvents: AnnualEvent[] = [
     month: "August",
     monthNum: 8,
     description:
-      "Showcase of MIT's summer accelerator cohort — some of the most technically ambitious student-founded companies in the country.",
+      "Showcase of MIT's summer accelerator cohort, some of the most technically ambitious student-founded companies in the country.",
     url: "https://entrepreneurship.mit.edu/delta-v",
   },
   {
@@ -99,7 +99,7 @@ export const annualEvents: AnnualEvent[] = [
     month: "October",
     monthNum: 10,
     description:
-      "Boston's week-long festival at the intersection of art, science, and technology — a city-wide celebration of innovation.",
+      "Boston's week-long festival at the intersection of art, science, and technology, a city-wide celebration of innovation.",
     url: "https://hubweek.org",
   },
   {
@@ -115,7 +115,7 @@ export const annualEvents: AnnualEvent[] = [
     month: "November",
     monthNum: 11,
     description:
-      "Annual gathering bringing together Boston's investor community — VCs, angels, family offices — with emerging founders.",
+      "Annual gathering bringing together Boston's investor community, including VCs, angels, and family offices, with emerging founders.",
     url: "https://lu.ma/boston",
   },
   {

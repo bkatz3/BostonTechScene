@@ -5,7 +5,7 @@ export const workspaces: Workspace[] = [
   {
     name: "Cambridge Innovation Center (CIC)",
     description:
-      "The hub of the Boston startup world — 100K+ sqft of flexible workspace, private offices, and labs in the heart of Kendall Square.",
+      "The hub of the Boston startup world, 100K+ sqft of flexible workspace, private offices, and labs in the heart of Kendall Square.",
     url: "https://cic.us/cambridge",
     neighborhood: "Kendall Square",
     type: "Coworking",
@@ -37,7 +37,7 @@ export const workspaces: Workspace[] = [
   {
     name: "Venture Café Cambridge",
     description:
-      "Free Thursday-evening coworking and networking space at CIC — legendary for facilitating unexpected connections.",
+      "Free Thursday-evening coworking and networking space at CIC, legendary for facilitating unexpected connections.",
     url: "https://venturecafecambridge.org",
     neighborhood: "Kendall Square",
     type: "Hub",
@@ -71,7 +71,7 @@ export const workspaces: Workspace[] = [
   {
     name: "District Hall",
     description:
-      "Boston's public innovation space — free to use, designed for collaboration, with events and workshops throughout the week.",
+      "Boston's public innovation space, free to use, designed for collaboration, with events and workshops throughout the week.",
     url: "https://districthallboston.org",
     neighborhood: "Seaport",
     type: "Hub",
@@ -79,7 +79,7 @@ export const workspaces: Workspace[] = [
   {
     name: "Workbar Seaport",
     description:
-      "Local Boston coworking chain with a strong community feel — Seaport location ideal for founders in the innovation district.",
+      "Local Boston coworking chain with a strong community feel, Seaport location ideal for founders in the innovation district.",
     url: "https://workbar.com/locations/seaport",
     neighborhood: "Seaport",
     type: "Coworking",
@@ -123,7 +123,7 @@ export const workspaces: Workspace[] = [
   {
     name: "Workbar Somerville",
     description:
-      "Coworking hub in Union Square — rapidly growing startup neighborhood between Cambridge and Boston.",
+      "Coworking hub in Union Square, a rapidly growing startup neighborhood between Cambridge and Boston.",
     url: "https://workbar.com/locations/somerville",
     neighborhood: "Somerville",
     type: "Coworking",
@@ -139,7 +139,7 @@ export const workspaces: Workspace[] = [
   {
     name: "Workbar Burlington",
     description:
-      "Suburban coworking option for founders north of Boston — great for team members commuting from the suburbs.",
+      "Suburban coworking option for founders north of Boston, great for team members commuting from the suburbs.",
     url: "https://workbar.com/locations/burlington",
     neighborhood: "Suburbs",
     type: "Coworking",

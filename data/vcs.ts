@@ -1,68 +1,13 @@
 import { VCFirm, Angel } from "./types";
 
 export const vcFirms: VCFirm[] = [
-  {
-    name: "Pillar VC",
-    description: "Community-first early-stage VC that invests in and builds the Boston startup ecosystem.",
-    url: "https://pillar.vc",
-    stage: "Seed / Series A",
-    focus: "Generalist",
-  },
+  // Seed
   {
     name: "E14 Fund",
     description: "MIT Media Lab's venture fund investing in transformative technologies emerging from the lab.",
     url: "https://www.e14.vc",
     stage: "Seed",
     focus: "Deep Tech",
-  },
-  {
-    name: "Founder Collective",
-    description: "Seed-stage fund founded by entrepreneurs, for entrepreneurs — backing ambitious founders early.",
-    url: "https://foundercollective.com",
-    stage: "Seed",
-    focus: "Generalist",
-  },
-  {
-    name: "Nextview Ventures",
-    description: "Seed-stage VC focused on the everyday economy, backing founders reimagining how people live and work.",
-    url: "https://nextviewventures.com",
-    stage: "Seed",
-    focus: "Consumer / B2B",
-  },
-  {
-    name: "Underscore VC",
-    description: "Community-powered VC investing in early-stage software companies with its Core peer network.",
-    url: "https://underscore.vc",
-    stage: "Seed / Series A",
-    focus: "Software",
-  },
-  {
-    name: "Hyperplane",
-    description: "Early-stage VC investing in AI-native companies building the next generation of intelligent software.",
-    url: "https://hyperplane.vc",
-    stage: "Early",
-    focus: "AI",
-  },
-  {
-    name: "Offscript",
-    description: "Early-stage investor backing founders who are rewriting the rules across technology and culture.",
-    url: "https://offscriptvc.com",
-    stage: "Seed",
-    focus: "Generalist",
-  },
-  {
-    name: "Link Ventures",
-    description: "Boston-based venture firm investing in early-stage technology companies with strong network effects.",
-    url: "https://linkventures.com",
-    stage: "Early",
-    focus: "Technology",
-  },
-  {
-    name: "Alumni Ventures",
-    description: "One of the most active VC firms in the US, connecting alumni investors to diversified venture portfolios.",
-    url: "https://www.av.vc",
-    stage: "Multi",
-    focus: "Generalist",
   },
   {
     name: "First Star",
@@ -72,18 +17,55 @@ export const vcFirms: VCFirm[] = [
     focus: "Generalist",
   },
   {
+    name: "Founder Collective",
+    description: "Seed-stage fund founded by entrepreneurs, for entrepreneurs, backing ambitious founders early.",
+    url: "https://foundercollective.com",
+    stage: "Seed",
+    focus: "Generalist",
+  },
+  {
+    name: "Innospark",
+    description: "Early-stage investor supporting innovative founders building impactful technology companies.",
+    url: "https://innospark.vc",
+    stage: "Seed",
+    focus: "Technology",
+  },
+  {
+    name: "Nextview Ventures",
+    description: "Seed-stage VC focused on the everyday economy, backing founders reimagining how people live and work.",
+    url: "https://nextview.vc",
+    stage: "Seed",
+    focus: "Consumer / B2B",
+  },
+  {
+    name: "Offscript",
+    description: "Early-stage investor backing founders who are rewriting the rules across technology and culture.",
+    url: "https://offscriptvc.com",
+    stage: "Seed",
+    focus: "Generalist",
+  },
+  // Seed / Series A
+  {
+    name: "Pillar VC",
+    description: "Community-first early-stage VC that invests in and builds the Boston startup ecosystem.",
+    url: "https://pillar.vc",
+    stage: "Seed / Series A",
+    focus: "Generalist",
+  },
+  {
+    name: "Underscore VC",
+    description: "Community-powered VC investing in early-stage software companies with its Core peer network.",
+    url: "https://underscore.vc",
+    stage: "Seed / Series A",
+    focus: "Software",
+  },
+  // Early
+  {
     name: "Flybridge Capital Partners",
     description: "Early-stage generalist VC with deep Boston roots, known for founder-friendly approach.",
     url: "https://flybridge.com",
     stage: "Early",
     focus: "Generalist",
-  },
-  {
-    name: "Matrix",
-    description: "Multi-stage venture firm with a long track record backing enterprise software and consumer companies.",
-    url: "https://matrixpartners.com",
-    stage: "Multi",
-    focus: "Enterprise / Consumer",
   },
   {
     name: "Glasswing Ventures",
@@ -93,11 +75,33 @@ export const vcFirms: VCFirm[] = [
     focus: "AI / Security",
   },
   {
-    name: "Innospark",
-    description: "Early-stage investor supporting innovative founders building impactful technology companies.",
-    url: "https://innospark.vc",
-    stage: "Seed",
+    name: "Hyperplane",
+    description: "Early-stage VC investing in AI-native companies building the next generation of intelligent software.",
+    url: "https://hyperplane.vc",
+    stage: "Early",
+    focus: "AI",
+  },
+  {
+    name: "Link Ventures",
+    description: "Boston-based venture firm investing in early-stage technology companies with strong network effects.",
+    url: "https://linkventures.com",
+    stage: "Early",
     focus: "Technology",
+  },
+  // Multi
+  {
+    name: "Alumni Ventures",
+    description: "One of the most active VC firms in the US, connecting alumni investors to diversified venture portfolios.",
+    url: "https://www.av.vc",
+    stage: "Multi",
+    focus: "Generalist",
+  },
+  {
+    name: "Matrix",
+    description: "Multi-stage venture firm with a long track record backing enterprise software and consumer companies.",
+    url: "https://matrixpartners.com",
+    stage: "Multi",
+    focus: "Enterprise / Consumer",
   },
 ];
 

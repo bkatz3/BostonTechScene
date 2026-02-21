@@ -7,7 +7,7 @@ import { workspaces } from "@/data/workspaces";
 export const metadata: Metadata = {
   title: "Workspaces",
   description:
-    "Coworking spaces, labs, and innovation hubs across Boston and Cambridge — by neighborhood.",
+    "Coworking spaces, labs, and innovation hubs across Boston and Cambridge, by neighborhood.",
 };
 
 const typeColors: Record<string, string> = {
@@ -34,7 +34,7 @@ export default function WorkspacesPage() {
           </h1>
           <p className="text-text-secondary text-lg max-w-2xl leading-relaxed">
             Where Boston founders work. From cutting-edge lab space in Kendall Square to community-driven
-            coworking in the Seaport — every neighborhood has its own flavor.
+            coworking in the Seaport. Every neighborhood has its own flavor.
           </p>
         </div>
       </FadeIn>
@@ -56,10 +56,10 @@ export default function WorkspacesPage() {
         if (neighborhoodWorkspaces.length === 0) return null;
 
         const neighborhoodDescriptions: Record<string, string> = {
-          "Kendall Square": "The epicenter of Boston's tech and life sciences ecosystem — arguably the densest concentration of innovation per square mile in the world.",
+          "Kendall Square": "The epicenter of Boston's tech and life sciences ecosystem, arguably the densest concentration of innovation per square mile in the world.",
           "Seaport": "Boston's fastest-growing innovation district, home to climatetech, robotics, and a thriving startup community along the waterfront.",
           "Back Bay": "Hub for university-affiliated startups and established tech companies, with great transit access and walkable amenities.",
-          "Somerville": "Union Square and Davis Square are quietly becoming Boston's next great startup neighborhood — more affordable, deeply creative.",
+          "Somerville": "Union Square and Davis Square are quietly becoming Boston's next great startup neighborhood, more affordable, deeply creative.",
           "Downtown": "Central Boston workspaces ideal for founders who need to be close to financial services, legal, and enterprise clients.",
           "Suburbs": "Options for founders and team members commuting from north or west of the city.",
         };

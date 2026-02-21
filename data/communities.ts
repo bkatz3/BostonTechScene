@@ -18,7 +18,7 @@ export const communities: Community[] = [
   {
     name: "Build 617",
     description:
-      "Boston's community for builders, makers, and technical founders — connecting the people who are building the next wave of products in the city.",
+      "Boston's community for builders, makers, and technical founders, connecting the people who are building the next wave of products in the city.",
     url: "https://www.linkedin.com/company/build617/",
     badge: "General",
   },
@@ -32,7 +32,7 @@ export const communities: Community[] = [
   {
     name: "Sundai Club",
     description:
-      "MIT and Harvard-affiliated community that builds and launches AI prototypes every Sunday — a recurring hackathon for founders and builders shipping fast.",
+      "MIT and Harvard-affiliated community that builds and launches AI prototypes every Sunday, a recurring hackathon for founders and builders shipping fast.",
     url: "https://www.sundai.club/",
     badge: "AI",
   },

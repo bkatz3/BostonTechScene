@@ -3,6 +3,16 @@
 import DataTable, { Column } from "@/components/DataTable";
 import type { VCFirm } from "@/data/types";
 
+const stageOrder: Record<string, number> = {
+  "Seed": 0,
+  "Seed / Series A": 1,
+  "Early": 2,
+  "Early / Growth": 3,
+  "Expansion": 4,
+  "Growth": 5,
+  "Multi": 6,
+};
+
 const stageColors: Record<string, string> = {
   "Seed": "bg-green-500/15 text-green-400",
   "Seed / Series A": "bg-green-500/15 text-green-400",
@@ -31,7 +41,7 @@ const columns: Column<VCFirm>[] = [
     label: "Stage",
     width: "w-[18%]",
     sortable: true,
-    sortValue: (f) => f.stage ?? "",
+    sortValue: (f) => stageOrder[f.stage ?? ""] ?? 99,
     render: (f) =>
       f.stage ? (
         <span
@@ -70,7 +80,7 @@ export default function VCFirmsTable({ firms }: { firms: VCFirm[] }) {
       data={firms}
       columns={columns}
       getHref={(f) => f.url}
-      defaultSortKey="name"
+      defaultSortKey="stage"
       minWidth="700px"
     />
   );
