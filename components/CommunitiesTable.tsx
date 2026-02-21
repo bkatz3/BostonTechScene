@@ -76,9 +76,9 @@ export default function CommunitiesTable({ communities }: { communities: Communi
             href={community.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-start px-5 py-4 ${
+            className={`group relative flex items-start px-5 py-4 ring-inset hover:ring-1 hover:ring-accent/50 hover:z-10 ${
               i < sorted.length - 1 ? "border-b border-[#2a2a2a]" : ""
-            } bg-surface hover:bg-[#202020] transition-colors cursor-pointer`}
+            } bg-surface hover:bg-[#222222] transition-colors cursor-pointer`}
           >
             <div className="w-[28%] shrink-0 pr-4">
               <span className="text-text-primary font-semibold text-sm group-hover:text-accent transition-colors">
