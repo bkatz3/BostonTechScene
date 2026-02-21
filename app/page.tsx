@@ -42,22 +42,60 @@ const quickNavItems = [
   },
 ];
 
-const whyBostonPoints = [
+const whyBostonStats = [
   {
-    title: "World-Class Research Institutions",
-    body: "MIT, Harvard, Northeastern, Tufts, BU — Boston has more top-ranked universities per square mile than anywhere on Earth. This creates a constant pipeline of breakthrough research and exceptional technical talent.",
+    number: "Top 3",
+    label: "U.S. AI Research Hub",
+    body: "Boston ranks among the top AI research ecosystems globally, anchored by MIT, Harvard, and industry labs.",
+    source: "Stanford AI Index / CBRE",
   },
   {
-    title: "Dominant in Life Sciences",
-    body: "Kendall Square is the life sciences capital of the world. Boston is home to more biotech and pharma companies than any other region, anchored by institutions like Broad Institute, Brigham & Women's, and MGH.",
+    number: "#1",
+    label: "U.S. Robotics Cluster",
+    body: "Anchored by MIT CSAIL and Boston Dynamics, Greater Boston is one of the world's leading robotics hubs.",
+    source: "CBRE / MassRobotics",
   },
   {
-    title: "Deep Venture Capital Ecosystem",
-    body: "Boston VCs have backed some of the most important companies in history. With 25+ active firms and a dense angel network, founders can access capital from pre-seed through growth without leaving the city.",
+    number: "#1",
+    label: "U.S. Biotech Ecosystem",
+    body: "Greater Boston leads the U.S. in biopharma venture funding, lab space, and therapeutic startups.",
+    source: "MassBio / CBRE / PitchBook",
   },
   {
-    title: "Rising Tech & AI Hub",
-    body: "From MassRobotics to the MA AI Coalition, Boston is building a reputation as a serious hub for hard tech, robotics, and applied AI — with the technical talent to back it up.",
+    number: "18",
+    label: "Unicorn startups based & founded here",
+    body: "Unicorns ranging across biotech, AI, and fintech, with more in the pipeline.",
+    source: "StartupBlink / Failory",
+  },
+  {
+    number: "$7.5B+",
+    label: "VC raised by Boston companies in 2024",
+    body: "Top 5 VC capital deployment city in the U.S. 30% of all U.S. biopharma capital flows here.",
+    source: "MassBio 2024",
+  },
+  {
+    number: "TOP 5",
+    label: "Global Startup Ecosystem",
+    body: "Boston ranks #3 in the U.S. and #5 globally, one of the most important startup cities on Earth.",
+    source: "Startup Genome 2025",
+  },
+  {
+    number: "2nd",
+    label: "Highest return efficiency in the U.S.",
+    body: "Boston ranks #2 in the U.S. by return efficiency, outperforming NYC, LA, and Seattle. Only the Bay Area scores higher.",
+    source: "PitchBook / Startups Magazine",
+  },
+  {
+    number: "50+",
+    label: "Accelerators & incubators",
+    body: "Including The Engine, Greentown Labs, and more. Pre-seed deal sizes are on the rise.",
+    source: "Startup Genome",
+  },
+  {
+    number: "Elite Talent",
+    label: "For producing funded founders",
+    body: "MIT and Harvard rank #2 and #3 globally. HBS alumni have founded more unicorns than any other MBA program.",
+    source: "Crunchbase 2024",
   },
 ];
 
@@ -116,17 +154,23 @@ export default function Home() {
             <div className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">Why Boston?</h2>
               <p className="text-text-secondary max-w-2xl">
-                New York gets the press. Silicon Valley gets the mythology. But Boston quietly produces some of
-                the most important companies in the world.
+                Boston is one of the greatest startup ecosystems in the world, and the data proves it.
               </p>
             </div>
           </FadeIn>
-          <div className="grid sm:grid-cols-2 gap-6">
-            {whyBostonPoints.map((point, i) => (
-              <FadeIn key={point.title} delay={i * 80}>
-                <div className="bg-surface border border-[#2a2a2a] rounded-xl p-6">
-                  <h3 className="text-text-primary font-semibold text-base mb-2">{point.title}</h3>
-                  <p className="text-text-secondary text-sm leading-relaxed">{point.body}</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {whyBostonStats.map((stat, i) => (
+              <FadeIn key={stat.label} delay={i * 70} className="h-full">
+                <div className="group relative h-full bg-surface border border-[#2a2a2a] rounded-xl p-6 hover:border-accent/30 transition-colors overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="relative">
+                    <div className="text-3xl sm:text-4xl font-bold text-accent tracking-tight mb-1 leading-none">
+                      {stat.number}
+                    </div>
+                    <div className="text-text-primary font-semibold text-sm mb-2">{stat.label}</div>
+                    <p className="text-text-secondary text-sm leading-relaxed">{stat.body}</p>
+                    <div className="mt-3 text-[11px] text-text-secondary/50 font-medium uppercase tracking-wide">{stat.source}</div>
+                  </div>
                 </div>
               </FadeIn>
             ))}
