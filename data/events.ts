@@ -2,34 +2,22 @@ import { EventAggregator, AnnualEvent } from "./types";
 
 export const eventAggregators: EventAggregator[] = [
   {
+    name: "Markit",
+    description:
+      "A curated text list of Boston startup events delivered straight to your phone. Subscribe to stay in the loop on what's happening across the ecosystem.",
+    url: "https://markitai.com/e/YXwOGGnqv?l=ATpa",
+  },
+  {
+    name: "Startup Boston",
+    description:
+      "A curated directory of Boston startup events, communities, and resources for founders and builders across the ecosystem.",
+    url: "https://www.startupbos.org/directory/events",
+  },
+  {
     name: "Luma",
     description:
       "The go-to calendar for Boston tech events. Search 'Boston startup' or 'Boston tech' to find the most active community events, meetups, and networking nights.",
     url: "https://lu.ma/boston",
-  },
-  {
-    name: "BostInno",
-    description:
-      "American City Business Journals' Boston tech coverage includes a comprehensive events calendar for local startup community happenings.",
-    url: "https://bizjournals.com/boston/bizwomen/news/bostinno",
-  },
-  {
-    name: "VentureFizz",
-    description:
-      "Boston's startup job board also curates a strong events calendar focused on founder and tech professional networking.",
-    url: "https://venturefizz.com/events",
-  },
-  {
-    name: "Eventbrite Boston Tech",
-    description:
-      "Search 'Boston startup' or 'Boston entrepreneur' for a steady stream of pitch nights, founder dinners, and skill-building workshops.",
-    url: "https://eventbrite.com/d/ma--boston/startup/",
-  },
-  {
-    name: "MassTLC Events",
-    description:
-      "Massachusetts Technology Leadership Council hosts policy briefings, executive roundtables, and the annual Innovation Awards.",
-    url: "https://masstlc.org/events",
   },
 ];
 
