@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import SectionHeader from "@/components/SectionHeader";
 import FadeIn from "@/components/FadeIn";
 import CommunitiesTable from "@/components/CommunitiesTable";
+import EventAggregatorsTable from "@/components/EventAggregatorsTable";
 import { communities } from "@/data/communities";
 import { eventAggregators } from "@/data/events";
 
@@ -38,25 +39,7 @@ export default function CommunitiesPage() {
             subtitle="The best places to discover Boston startup meetups, networking nights, and community gatherings."
           />
         </FadeIn>
-        <div className="overflow-hidden rounded-xl border border-[#2a2a2a]">
-          {eventAggregators.map((agg, i) => (
-            <FadeIn key={agg.name} delay={i * 60}>
-              <div className={`flex flex-col sm:flex-row sm:items-center gap-4 p-5 ${i < eventAggregators.length - 1 ? "border-b border-[#2a2a2a]" : ""} bg-surface hover:bg-[#202020] transition-colors`}>
-                <div className="sm:w-40 shrink-0">
-                  <a
-                    href={agg.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-text-primary font-semibold text-sm hover:text-accent transition-colors"
-                  >
-                    {agg.name} →
-                  </a>
-                </div>
-                <p className="text-text-secondary text-sm leading-relaxed flex-1">{agg.description}</p>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
+        <EventAggregatorsTable aggregators={eventAggregators} />
       </section>
 
       {/* Communities table */}

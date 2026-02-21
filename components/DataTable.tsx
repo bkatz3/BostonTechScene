@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 
 export interface Column<T> {
   key: string;
@@ -11,7 +11,7 @@ export interface Column<T> {
   flex?: boolean;
   sortable?: boolean;
   sortValue?: (item: T) => string;
-  render: (item: T) => React.ReactNode;
+  render: (item: T) => ReactNode;
 }
 
 interface DataTableProps<T> {
