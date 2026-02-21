@@ -83,8 +83,8 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={200}>
               <p className="text-lg sm:text-xl text-text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
-                Boston is one of the world&apos;s great startup cities. This is the curated, no-fluff resource to help
-                you tap into its communities, capital, programs, and spaces.
+                The curated, no-fluff resource to help
+                you tap into its communities, capital, programs, and more.
               </p>
             </FadeIn>
             <FadeIn delay={300}>
@@ -96,9 +96,7 @@ export default function Home() {
                   Explore the ecosystem
                 </a>
                 <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:ben@hybrd.app"
                   className="px-6 py-3 rounded-xl bg-surface border border-[#2a2a2a] text-text-primary font-semibold hover:border-accent/40 transition-colors"
                 >
                   Contribute a resource
@@ -110,19 +108,6 @@ export default function Home() {
         <CompanyCarousel />
       </section>
 
-      {/* Stats */}
-      <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <FadeIn>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <StatCard value={communities.length} label="Communities" />
-              <StatCard value={annualEvents.length} label="Annual Events" />
-              <StatCard value={programs.length} label="Programs" />
-              <StatCard value={vcFirms.length} label="VC Firms" />
-            </div>
-          </FadeIn>
-        </div>
-      </section>
 
       {/* Why Boston */}
       <section className="py-20">

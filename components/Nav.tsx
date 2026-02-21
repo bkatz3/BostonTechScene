@@ -48,7 +48,7 @@ export default function Nav() {
           {/* Contribute button + hamburger */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com"
+              href="mailto:ben@hybrd.app"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-white text-sm font-medium hover:bg-blue-500 transition-colors"
@@ -91,7 +91,7 @@ export default function Nav() {
               </Link>
             ))}
             <a
-              href="https://github.com"
+              href="mailto:ben@hybrd.app"
               target="_blank"
               rel="noopener noreferrer"
               className="block mt-3 px-3 py-2.5 rounded-lg bg-accent text-white text-sm font-medium text-center hover:bg-blue-500 transition-colors"

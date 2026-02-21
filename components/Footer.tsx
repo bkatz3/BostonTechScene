@@ -8,15 +8,26 @@ export default function Footer() {
           <div className="text-text-secondary text-sm text-center md:text-left">
             <p className="font-medium text-text-primary mb-1">Boston Tech Scene</p>
             <p>
-              Made by{" "}
+              Made by Ben Katz{" "}
+              <span className="text-text-secondary/40">(</span>
+              <a
+                href="https://twitter.com/benlkatz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                X
+              </a>
+              <span className="text-text-secondary/40">, </span>
               <a
                 href="https://www.linkedin.com/in/benjaminlkatz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline"
               >
-                Ben Katz
-              </a>{" "}
+                LinkedIn
+              </a>
+              <span className="text-text-secondary/40">)</span>{" "}
               and the{" "}
               <a
                 href="https://massaicoalition.com/"
@@ -30,12 +41,12 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-6 text-sm text-text-secondary">
             <a
-              href="https://github.com"
+              href="mailto:ben@hybrd.app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent hover:underline font-medium"
             >
-              Contribute →
+              Make a suggestion →
             </a>
           </div>
         </div>
