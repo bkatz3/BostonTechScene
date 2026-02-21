@@ -1,4 +1,4 @@
-import { Community, Superconnector } from "./types";
+import { Community } from "./types";
 
 export const communities: Community[] = [
   {
@@ -43,27 +43,4 @@ export const communities: Community[] = [
     url: "https://www.meetup.com/boston_new_technology/",
     badge: "General",
   },
-];
-
-export const superconnectors: Superconnector[] = [
-  { name: "Semyon Dukach", role: "Managing Partner, One Way Ventures", url: "https://twitter.com/semyon" },
-  { name: "Bijan Sabet", role: "General Partner, Spark Capital" },
-  { name: "Katie Rae", role: "CEO & Managing Partner, The Engine" },
-  { name: "Dhruv Vasishtha", role: "Founder, Project Common" },
-  { name: "Reed Sturtevant", role: "General Partner, The Engine" },
-  { name: "Yasmin Razavi", role: "General Partner, Glasswing Ventures" },
-  { name: "Saar Gur", role: "General Partner, CRV" },
-  { name: "Jeff Bussgang", role: "General Partner, Flybridge Capital" },
-  { name: "Simon Swords", role: "Founder, Boston New Technology" },
-  { name: "Angus Davis", role: "Serial Entrepreneur & Angel Investor" },
-  { name: "Ric Fulop", role: "CEO, Desktop Metal" },
-  { name: "Sarah Hodges", role: "Partner, Pillar VC" },
-  { name: "Russ Wilcox", role: "Partner, Pillar VC" },
-  { name: "Amir Nashat", role: "Managing Partner, Polaris Partners" },
-  { name: "David Aronoff", role: "General Partner, Flybridge Capital" },
-  { name: "Tim Rowe", role: "Founder & CEO, CIC" },
-  { name: "Nina Goodheart", role: "Partner, Accomplice" },
-  { name: "TJ Mahony", role: "General Partner, Accomplice" },
-  { name: "Matthew Fadden", role: "Partner, Underscore VC" },
-  { name: "Scott Friend", role: "Partner, Bain Capital Ventures" },
 ];

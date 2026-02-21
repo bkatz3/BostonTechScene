@@ -5,22 +5,8 @@ export interface Community {
   badge?: string;
 }
 
-export interface Superconnector {
-  name: string;
-  role: string;
-  url?: string;
-}
-
 export interface EventAggregator {
   name: string;
-  description: string;
-  url: string;
-}
-
-export interface AnnualEvent {
-  name: string;
-  month: string;
-  monthNum: number;
   description: string;
   url: string;
 }

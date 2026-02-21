@@ -99,8 +99,7 @@ export default function Home() {
             <FadeIn delay={100}>
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-text-primary mb-6 leading-[1.1] tracking-tight text-balance">
                 The Builder&apos;s Guide to{" "}
-                <span className="text-accent">Boston</span>{" "}
-                {/* for Founders */}
+                <span className="text-accent">Boston</span>
               </h1>
             </FadeIn>
             <FadeIn delay={200}>
