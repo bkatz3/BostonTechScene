@@ -39,29 +39,6 @@ export default function ProgramsPage() {
         </FadeIn>
         <ProgramsTable programs={programs} />
       </section>
-
-      {/* Tips section */}
-      <section className="mt-20">
-        <FadeIn>
-          <div className="bg-surface border border-[#2a2a2a] rounded-xl p-8">
-            <h2 className="text-text-primary font-bold text-xl mb-4">How to choose a program</h2>
-            <div className="grid sm:grid-cols-3 gap-6 text-sm text-text-secondary">
-              <div>
-                <p className="text-text-primary font-semibold mb-1">Consider equity</p>
-                <p>MassChallenge takes zero equity. Most others take 5-10%. Factor this into your decision carefully.</p>
-              </div>
-              <div>
-                <p className="text-text-primary font-semibold mb-1">Match your stage</p>
-                <p>MassChallenge and Techstars want traction. Incubators like Greentown and LabCentral are better pre-revenue.</p>
-              </div>
-              <div>
-                <p className="text-text-primary font-semibold mb-1">Network over curriculum</p>
-                <p>The real value is the cohort and alumni network. Ask current participants about the quality of mentors.</p>
-              </div>
-            </div>
-          </div>
-        </FadeIn>
-      </section>
     </div>
   );
 }
