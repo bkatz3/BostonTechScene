@@ -6,8 +6,6 @@ import FadeIn from "@/components/FadeIn";
 import { communities } from "@/data/communities";
 import { programs } from "@/data/programs";
 import { vcFirms } from "@/data/vcs";
-import { workspaces } from "@/data/workspaces";
-
 const quickNavItems = [
   {
     href: "/communities",
@@ -26,12 +24,6 @@ const quickNavItems = [
     title: "VCs",
     description: "Boston-based venture capital firms and angels actively writing checks.",
     icon: "💼",
-  },
-  {
-    href: "/workspaces",
-    title: "Workspaces",
-    description: "Coworking spaces, labs, and innovation hubs by neighborhood.",
-    icon: "🏢",
   },
 ];
 
@@ -127,7 +119,7 @@ export default function Home() {
                   Explore the ecosystem
                 </a>
                 <a
-                  href="mailto:ben@hybrd.app"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfB1YUnyy0D_kv6hzOVjOIzlyiinNVa7V9rePFcR5nrK9nOjQ/viewform?usp=dialog"
                   className="px-6 py-3 rounded-xl bg-surface border border-[#2a2a2a] text-text-primary font-semibold hover:border-accent/40 transition-colors"
                 >
                   Contribute a resource
@@ -178,7 +170,7 @@ export default function Home() {
             <div className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">Explore the guide</h2>
               <p className="text-text-secondary max-w-xl">
-                Four sections covering everything you need to plug into the Boston ecosystem.
+                Three sections covering everything you need to plug into the Boston ecosystem.
               </p>
             </div>
           </FadeIn>
@@ -188,7 +180,6 @@ export default function Home() {
                 "/communities": communities.length,
                 "/programs": programs.length,
                 "/vcs": vcFirms.length,
-                "/workspaces": workspaces.length,
               };
               return (
                 <FadeIn key={item.href} delay={i * 80}>

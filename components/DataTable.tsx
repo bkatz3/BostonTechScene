@@ -94,26 +94,35 @@ export default function DataTable<T>({
         </div>
 
         {/* Rows */}
-        {sorted.map((item, i) => (
-          <a
-            key={getHref(item)}
-            href={getHref(item)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`group relative flex items-start px-5 py-4 ring-inset hover:ring-1 hover:ring-accent/50 hover:z-10 ${
-              i < sorted.length - 1 ? "border-b border-[#2a2a2a]" : ""
-            } bg-surface hover:bg-[#222222] transition-colors`}
-          >
-            {columns.map((col) => (
-              <div
-                key={col.key}
-                className={col.flex ? "flex-1" : `${col.width} shrink-0 pr-4`}
-              >
-                {col.render(item)}
-              </div>
-            ))}
-          </a>
-        ))}
+        {sorted.map((item, i) => {
+          const href = getHref(item);
+          const rowClass = `group relative flex items-start px-5 py-4 ring-inset hover:ring-1 hover:ring-accent/50 hover:z-10 ${
+            i < sorted.length - 1 ? "border-b border-[#2a2a2a]" : ""
+          } bg-surface hover:bg-[#222222] transition-colors`;
+          const inner = columns.map((col) => (
+            <div
+              key={col.key}
+              className={col.flex ? "flex-1" : `${col.width} shrink-0 pr-4`}
+            >
+              {col.render(item)}
+            </div>
+          ));
+          return href ? (
+            <a
+              key={href + i}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={rowClass}
+            >
+              {inner}
+            </a>
+          ) : (
+            <div key={i} className={rowClass}>
+              {inner}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

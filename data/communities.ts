@@ -30,6 +30,13 @@ export const communities: Community[] = [
     badge: "General",
   },
   {
+    name: "Sundai Club",
+    description:
+      "MIT and Harvard-affiliated community that builds and launches AI prototypes every Sunday — a recurring hackathon for founders and builders shipping fast.",
+    url: "https://www.sundai.club/",
+    badge: "AI",
+  },
+  {
     name: "Boston New Technology",
     description:
       "Largest tech meetup in Boston with 10,000+ members, hosting monthly meetups showcasing local startups and technology demos.",

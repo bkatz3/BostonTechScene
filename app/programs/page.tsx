@@ -1,21 +1,13 @@
 import type { Metadata } from "next";
-import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import FadeIn from "@/components/FadeIn";
+import ProgramsTable from "@/components/ProgramsTable";
 import { programs } from "@/data/programs";
 
 export const metadata: Metadata = {
   title: "Programs",
   description:
     "Boston-area accelerators, incubators, fellowships, and university programs for early-stage founders.",
-};
-
-const typeBadgeColors: Record<string, string> = {
-  Accelerator: "bg-blue-500/15 text-blue-400",
-  Incubator: "bg-green-500/15 text-green-400",
-  Fellowship: "bg-purple-500/15 text-purple-400",
-  Lab: "bg-orange-500/15 text-orange-400",
-  Fund: "bg-yellow-500/15 text-yellow-400",
 };
 
 export default function ProgramsPage() {
@@ -37,18 +29,7 @@ export default function ProgramsPage() {
         </div>
       </FadeIn>
 
-      {/* Type legend */}
-      <FadeIn>
-        <div className="flex flex-wrap gap-2 mb-12">
-          {Object.entries(typeBadgeColors).map(([type, color]) => (
-            <span key={type} className={`px-3 py-1 rounded-full text-xs font-medium ${color}`}>
-              {type}
-            </span>
-          ))}
-        </div>
-      </FadeIn>
-
-      {/* Programs grid */}
+      {/* Programs table */}
       <section>
         <FadeIn>
           <SectionHeader
@@ -56,21 +37,7 @@ export default function ProgramsPage() {
             subtitle="Accelerators, incubators, labs, and funds across industries and founder types."
           />
         </FadeIn>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {programs.map((program, i) => (
-            <FadeIn key={program.name} delay={i * 50}>
-              <div className="h-full">
-                <Card
-                  title={program.name}
-                  description={`${program.focus ? `[${program.focus}] ` : ""}${program.description}`}
-                  url={program.url}
-                  badge={program.type}
-                  badgeColor={typeBadgeColors[program.type]}
-                />
-              </div>
-            </FadeIn>
-          ))}
-        </div>
+        <ProgramsTable programs={programs} />
       </section>
 
       {/* Tips section */}

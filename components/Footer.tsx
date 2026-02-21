@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-6 text-sm text-text-secondary">
             <a
-              href="mailto:ben@hybrd.app"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfB1YUnyy0D_kv6hzOVjOIzlyiinNVa7V9rePFcR5nrK9nOjQ/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent hover:underline font-medium"

@@ -8,7 +8,6 @@ const links = [
   { href: "/communities", label: "Communities" },
   { href: "/programs", label: "Programs" },
   { href: "/vcs", label: "VCs" },
-  { href: "/workspaces", label: "Workspaces" },
 ];
 
 export default function Nav() {
@@ -47,7 +46,7 @@ export default function Nav() {
           {/* Contribute button + hamburger */}
           <div className="flex items-center gap-3">
             <a
-              href="mailto:ben@hybrd.app"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfB1YUnyy0D_kv6hzOVjOIzlyiinNVa7V9rePFcR5nrK9nOjQ/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-white text-sm font-medium hover:bg-blue-500 transition-colors"
@@ -90,7 +89,7 @@ export default function Nav() {
               </Link>
             ))}
             <a
-              href="mailto:ben@hybrd.app"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfB1YUnyy0D_kv6hzOVjOIzlyiinNVa7V9rePFcR5nrK9nOjQ/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="block mt-3 px-3 py-2.5 rounded-lg bg-accent text-white text-sm font-medium text-center hover:bg-blue-500 transition-colors"
