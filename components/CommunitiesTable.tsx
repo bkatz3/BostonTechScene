@@ -58,7 +58,6 @@ export default function CommunitiesTable({ communities }: { communities: Communi
       data={communities}
       columns={columns}
       getHref={(c) => c.url}
-      defaultSortKey="name"
-    />
+      />
   );
 }

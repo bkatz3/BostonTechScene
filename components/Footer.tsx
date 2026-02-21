@@ -8,26 +8,15 @@ export default function Footer() {
           <div className="text-text-secondary text-sm text-center md:text-left">
             <p className="font-medium text-text-primary mb-1">Boston Tech Scene</p>
             <p>
-              Made by Ben Katz{" "}
-              <span className="text-text-secondary/40">(</span>
+              Made by{" "}
               <a
-                href="https://twitter.com/benlkatz"
+                href="https://www.benlkatz.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline"
               >
-                X
-              </a>
-              <span className="text-text-secondary/40">, </span>
-              <a
-                href="https://www.linkedin.com/in/benjaminlkatz/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent hover:underline"
-              >
-                LinkedIn
-              </a>
-              <span className="text-text-secondary/40">)</span>{" "}
+                Ben Katz
+              </a>{" "}
               and the{" "}
               <a
                 href="https://massaicoalition.com/"
@@ -46,7 +35,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-accent hover:underline font-medium"
             >
-              Make a suggestion →
+              Contribute a resource →
             </a>
           </div>
         </div>
