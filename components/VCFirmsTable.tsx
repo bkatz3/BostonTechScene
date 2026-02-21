@@ -41,7 +41,7 @@ const columns: Column<VCFirm>[] = [
     label: "Stage",
     width: "w-[18%]",
     sortable: true,
-    sortValue: (f) => stageOrder[f.stage ?? ""] ?? 99,
+    sortValue: (f) => String(stageOrder[f.stage ?? ""] ?? 99),
     render: (f) =>
       f.stage ? (
         <span

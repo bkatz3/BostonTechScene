@@ -1,6 +1,5 @@
 import GradientOrbs from "@/components/GradientOrbs";
 import CompanyCarousel from "@/components/CompanyCarousel";
-import StatCard from "@/components/StatCard";
 import QuickNavCard from "@/components/QuickNavCard";
 import FadeIn from "@/components/FadeIn";
 import { communities } from "@/data/communities";
@@ -99,7 +98,7 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={100}>
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-text-primary mb-6 leading-[1.1] tracking-tight text-balance">
-                The Builder's Guide to{" "}
+                The Builder&apos;s Guide to{" "}
                 <span className="text-accent">Boston</span>{" "}
                 {/* for Founders */}
               </h1>
@@ -107,7 +106,7 @@ export default function Home() {
             <FadeIn delay={200}>
               <p className="text-lg sm:text-xl text-text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
                 The curated resource to help
-                you tap into Boston's startup communities, capital, programs, and more.
+                you tap into Boston&apos;s startup communities, capital, programs, and more.
               </p>
             </FadeIn>
             <FadeIn delay={300}>
