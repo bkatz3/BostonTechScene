@@ -1,0 +1,80 @@
+# Boston Tech Scene
+
+> A curated directory of the Boston and Cambridge startup ecosystem — covering communities, events, accelerators, VCs, angel investors, and workspaces for founders and builders.
+
+## Overview
+
+Boston Tech Scene is a resource for founders, builders, and investors navigating the Boston/Cambridge technology and startup ecosystem. It aggregates key organizations, programs, and spaces across the region to help people plug into the local scene.
+
+## Communities
+
+- **MA AI Coalition** — Statewide coalition accelerating AI innovation and policy in Massachusetts. https://massaicoalition.com
+- **Cambridge Founders Club** — Community for founders based in and around Cambridge. https://www.cambridgefounders.club/
+- **Build 617** — Boston's community for builders, makers, and technical founders. https://www.linkedin.com/company/build617/
+- **Startup Boston** — Curated directory of Boston startup events, communities, and resources. https://www.startupbos.org/
+- **Sundai Club** — MIT and Harvard-affiliated community building AI prototypes every Sunday. https://www.sundai.club/
+- **Boston New Technology** — Largest tech meetup in Boston with 10,000+ members. https://www.meetup.com/boston_new_technology/
+
+## Events
+
+- **Markit** — Curated text list of Boston startup events delivered to your phone. https://markitai.com
+- **Startup Boston** — Curated directory of Boston startup events. https://www.startupbos.org/directory/events
+- **Luma** — Go-to calendar for Boston tech events. https://lu.ma/boston
+
+## Accelerators & Programs
+
+- **The Engine** — MIT's tough tech venture fund and accelerator for hard science and engineering breakthroughs. https://engine.xyz
+- **MassChallenge** — World's largest startup accelerator, zero equity taken, Boston cohort runs annually. https://masschallenge.org/programs-boston
+- **Techstars Boston** — 3-month accelerator offering $120K investment and global network access. https://techstars.com/accelerators/boston
+- **Greentown Labs Incubator** — North America's largest climatetech incubator with lab space and expert programming. https://greentownlabs.com/incubator
+- **MassRobotics Startup Program** — World-class robotics R&D space and prototyping equipment for robotics startups. https://massrobotics.org/membership
+
+## Venture Capital Firms
+
+### Seed Stage
+- **E14 Fund** — MIT Media Lab's venture fund for transformative deep tech. https://www.e14.vc
+- **First Star** — Pre-seed and seed investor for earliest-stage founders. https://firststar.vc
+- **Founder Collective** — Seed-stage fund founded by entrepreneurs, for entrepreneurs. https://foundercollective.com
+- **Nextview Ventures** — Seed-stage VC focused on the everyday economy. https://nextview.vc
+
+### Seed / Series A
+- **Pillar VC** — Community-first early-stage VC investing in and building the Boston ecosystem. https://pillar.vc
+- **Underscore VC** — Community-powered VC investing in early-stage software companies. https://underscore.vc
+
+### Early Stage
+- **Flybridge Capital Partners** — Early-stage generalist VC with deep Boston roots. https://flybridge.com
+- **Glasswing Ventures** — AI and frontier tech VC at the intersection of AI, security, and enterprise. https://glasswing.vc
+- **Hyperplane** — Early-stage VC investing in AI-native companies. https://hyperplane.vc
+- **Link Ventures** — Boston-based VC in early-stage technology companies. https://linkventures.com
+
+### Multi-Stage
+- **Alumni Ventures** — One of the most active VC firms in the US. https://www.av.vc
+- **Matrix** — Multi-stage venture firm backing enterprise software and consumer companies. https://matrixpartners.com
+
+## Notable Angel Investors
+
+Angus Davis, Bob Mason, Dan Slagen, David Cancel, Dharmesh Shah (HubSpot co-founder), Eric Paley (Founder Collective), Jay Batson (Acquia co-founder), Maia Heymann, Michael Skok, Ryan Moore (Underscore VC), Semyon Dukach (One Way Ventures), Wendy Lea.
+
+## Workspaces
+
+### Kendall Square / Cambridge
+- **Cambridge Innovation Center (CIC)** — Hub of the Boston startup world, 100K+ sqft in Kendall Square. https://cic.us/cambridge
+- **LabCentral** — Premier shared lab space for life science and biotech startups adjacent to MIT. https://labcentral.org
+- **The Engine** — MIT tough tech space with specialized lab facilities. https://engine.xyz
+- **WeWork Cambridge** — Flexible coworking and private offices in Kendall Square. https://wework.com
+- **Venture Café Cambridge** — Free Thursday-evening coworking and networking at CIC. https://venturecafecambridge.org
+
+### Seaport / South Boston
+- **MassRobotics** — World-leading robotics hub with 60,000+ sqft of R&D space. https://massrobotics.org
+- **Greentown Labs** — North America's largest climatetech incubator with wet lab and maker space. https://greentownlabs.com
+- **District Hall** — Boston's free public innovation space. https://districthallboston.org
+- **Workbar Seaport** — Local coworking chain in the Seaport Innovation District. https://workbar.com
+
+### Back Bay
+- **Workbar Back Bay** — Flagship Boston coworking with premium amenities. https://workbar.com/locations/back-bay
+- **Harvard Innovation Labs** — Harvard's pan-university hub in Allston for Harvard-affiliated founders. https://innovationlabs.harvard.edu
+- **BU Spark! / BUild Lab** — Boston University's innovation space on Commonwealth Ave. https://bu.edu/spark
+
+### Somerville & Downtown
+- **Workbar Somerville** — Coworking hub in Union Square. https://workbar.com/locations/somerville
+- **CIC Boston (Downtown)** — CIC's Downtown Boston flexible coworking location. https://cic.us/boston
