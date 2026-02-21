@@ -8,20 +8,27 @@ export default function Footer() {
           <div className="text-text-secondary text-sm text-center md:text-left">
             <p className="font-medium text-text-primary mb-1">Boston Tech Scene</p>
             <p>
-              Built by Ben and the{" "}
+              Made by{" "}
               <a
-                href="https://projectcommon.co"
+                href="https://www.linkedin.com/in/benjaminlkatz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline"
               >
-                Project Common
+                Ben Katz
               </a>{" "}
-              community.
+              and the{" "}
+              <a
+                href="https://massaicoalition.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+              >
+                Mass AI Coalition
+              </a>
             </p>
           </div>
           <div className="flex items-center gap-6 text-sm text-text-secondary">
-            <span>Last updated {year}</span>
             <a
               href="https://github.com"
               target="_blank"
@@ -31,6 +38,11 @@ export default function Footer() {
               Contribute →
             </a>
           </div>
+        </div>
+      </div>
+      <div className="border-t border-[#2a2a2a]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+          <p className="text-text-secondary/50 text-xs">© {year} BostonTechScene. All rights reserved.</p>
         </div>
       </div>
     </footer>
