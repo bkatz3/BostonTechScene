@@ -107,7 +107,7 @@ export default function DataTable<T>({
           const inner = columns.map((col) => (
             <div
               key={col.key}
-              className={col.flex ? "flex-1" : `${col.width} shrink-0 pr-4`}
+              className={col.flex ? "flex-1 min-w-0" : `${col.width} shrink-0 pr-4 overflow-hidden`}
             >
               {col.render(item)}
             </div>

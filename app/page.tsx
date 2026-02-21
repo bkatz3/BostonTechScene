@@ -106,14 +106,14 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={200}>
               <p className="text-lg sm:text-xl text-text-secondary mb-10 max-w-2xl mx-auto leading-relaxed">
-                The curated, no-fluff resource to help
+                The curated resource to help
                 you tap into Boston's startup communities, capital, programs, and more.
               </p>
             </FadeIn>
             <FadeIn delay={300}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="/communities"
+                  href="#explore-the-guide"
                   className="px-6 py-3 rounded-xl bg-accent text-white font-semibold hover:bg-blue-500 transition-colors"
                 >
                   Explore the ecosystem
@@ -164,11 +164,11 @@ export default function Home() {
       </section>
 
       {/* Quick Nav */}
-      <section className="py-20 border-t border-[#2a2a2a]">
+      <section id="explore-the-guide" className="py-20 border-t border-[#2a2a2a]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <FadeIn>
             <div className="mb-12">
-              <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">Explore the guide</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">Explore the Ecosystem</h2>
               <p className="text-text-secondary max-w-xl">
                 Three sections covering everything you need to plug into the Boston ecosystem.
               </p>

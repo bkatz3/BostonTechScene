@@ -27,7 +27,7 @@ const columns: Column<VCFirm>[] = [
   {
     key: "name",
     label: "Firm",
-    width: "w-[22%]",
+    width: "w-[20%]",
     sortable: true,
     sortValue: (f) => f.name,
     render: (f) => (
@@ -56,7 +56,7 @@ const columns: Column<VCFirm>[] = [
   {
     key: "focus",
     label: "Focus",
-    width: "w-[16%]",
+    width: "w-[24%]",
     render: (f) =>
       f.focus ? (
         <span className="mt-0.5 inline-block text-[11px] font-medium px-2 py-0.5 rounded-full bg-[#2a2a2a] text-text-secondary whitespace-nowrap">

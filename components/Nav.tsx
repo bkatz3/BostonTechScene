@@ -54,7 +54,7 @@ export default function Nav() {
               Contribute
             </a>
             <button
-              className="md:hidden p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface transition-colors"
+              className="md:hidden p-2.5 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface transition-colors"
               onClick={() => setOpen(!open)}
               aria-label="Toggle menu"
             >
