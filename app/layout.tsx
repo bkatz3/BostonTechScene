@@ -25,12 +25,10 @@ export const metadata: Metadata = {
     default: "Boston Tech Scene: The Founder's Guide",
     template: "%s | Boston Tech Scene",
   },
-  description:
-    "The curated guide to Boston's startup ecosystem: communities, events, accelerators, VCs, and workspaces for founders.",
+  description: "A builder's guide to Boston",
   openGraph: {
     title: "Boston Tech Scene: The Founder's Guide",
-    description:
-      "The curated guide to Boston's startup ecosystem: communities, events, accelerators, VCs, and workspaces for founders.",
+    description: "A builder's guide to Boston",
     url: "https://bostontechscene.com",
     siteName: "Boston Tech Scene",
     locale: "en_US",
@@ -47,8 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Boston Tech Scene: The Founder's Guide",
-    description:
-      "The curated guide to Boston's startup ecosystem: communities, events, accelerators, VCs, and workspaces for founders.",
+    description: "A builder's guide to Boston",
     images: ["https://bostontechscene.com/og-image.png"],
   },
 };
