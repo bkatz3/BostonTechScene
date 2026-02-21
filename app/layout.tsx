@@ -22,13 +22,13 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Boston Tech Scene: The Founder's Guide",
+    default: "Boston Tech Scene: A Builder's Guide to Boston",
     template: "%s | Boston Tech Scene",
   },
-  description: "A builder's guide to Boston",
+  description: "A builder's guide to Boston's startup ecosystem — communities, capital, programs, and more.",
   openGraph: {
-    title: "Boston Tech Scene: The Founder's Guide",
-    description: "A builder's guide to Boston",
+    title: "Boston Tech Scene: A Builder's Guide to Boston",
+    description: "A builder's guide to Boston's startup ecosystem — communities, capital, programs, and more.",
     url: "https://bostontechscene.com",
     siteName: "Boston Tech Scene",
     locale: "en_US",
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
         url: "https://bostontechscene.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "A founders guide to Boston",
+        alt: "A builder's guide to Boston",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Boston Tech Scene: The Founder's Guide",
-    description: "A builder's guide to Boston",
+    title: "Boston Tech Scene: A Builder's Guide to Boston",
+    description: "A builder's guide to Boston's startup ecosystem — communities, capital, programs, and more.",
     images: ["https://bostontechscene.com/og-image.png"],
   },
 };

@@ -74,6 +74,17 @@ export default function Nav() {
         {/* Mobile menu */}
         {open && (
           <div className="md:hidden pb-4 border-t border-[#2a2a2a] mt-0 pt-3">
+            <Link
+              href="/"
+              onClick={() => setOpen(false)}
+              className={`block px-3 py-2.5 rounded-lg text-sm font-medium mb-1 transition-colors ${
+                pathname === "/"
+                  ? "text-accent bg-accent/10"
+                  : "text-text-secondary hover:text-text-primary hover:bg-surface"
+              }`}
+            >
+              Home
+            </Link>
             {links.map((link) => (
               <Link
                 key={link.href}
