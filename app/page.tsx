@@ -22,7 +22,7 @@ const quickNavItems = [
     href: "/vcs",
     title: "VCs",
     description: "Boston-based venture capital firms and angels actively writing checks.",
-    icon: "💼",
+    icon: "💰",
   },
 ];
 
