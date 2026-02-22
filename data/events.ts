@@ -2,6 +2,12 @@ import { EventAggregator } from "./types";
 
 export const eventAggregators: EventAggregator[] = [
   {
+    name: "Mass AI Coalition",
+    description:
+      "A company-led initiative uniting founders, operators, investors, and builders across Massachusetts to advance AI innovation. Hosts workshops, hack days, networking events, and product showcases.",
+    url: "https://massaicoalition.com/",
+  },
+  {
     name: "Markit",
     description:
       "A curated text list of Boston startup events delivered straight to your phone. Subscribe to stay in the loop on what's happening across the ecosystem.",
