@@ -16,15 +16,6 @@ export default function Footer() {
                 className="text-accent hover:underline"
               >
                 Ben Katz
-              </a>{" "}
-              and the{" "}
-              <a
-                href="https://massaicoalition.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent hover:underline"
-              >
-                Mass AI Coalition
               </a>
             </p>
           </div>
